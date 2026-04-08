@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fixtures Installation - Viscarello Plumbing Heating & Gas Fitting</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode:"class",
+    theme: { extend: { colors: {
+      "on-secondary":"#ffffff","surface":"#f8f9ff","on-surface":"#161c24",
+      "surface-container-low":"#eef4ff","on-primary-container":"#87a0cd","secondary":"#b6171e",
+      "on-primary":"#ffffff","surface-container":"#e9eef9","surface-container-lowest":"#ffffff",
+      "surface-container-highest":"#dde3ee","on-primary-fixed":"#001b3d","primary-fixed":"#d6e3ff",
+      "primary-container":"#1b365d","outline-variant":"#c4c6cf","surface-container-high":"#e3e8f4",
+      "primary":"#002046","secondary-container":"#da3433","on-surface-variant":"#44474e"
+    }, borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Manrope"],"body":["Inter"],"label":["Inter"]} } }
+  }
+</script>
+<style>
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;}
+  #mobile-menu{display:none;} #mobile-menu.open{display:block;}
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<nav class="fixed top-0 w-full z-50 bg-[#f8f9ff]/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="../index.html" class="text-xl font-bold text-[#002046] font-headline tracking-tight">Viscarello Plumbing</a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../index.html">Home</a>
+      <div class="relative group">
+        <button class="flex items-center gap-0.5 text-[#b6171e] font-bold border-b-2 border-[#b6171e] pb-1">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 min-w-[220px]">
+          <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-1.5 overflow-hidden">
+            <a href="heating.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Heating</a>
+            <a href="pipe-repair.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pipe Repair</a>
+            <a href="fixtures.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#b6171e] bg-[#eef4ff] font-bold">Fixtures &amp; Installation</a>
+            <a href="pumps.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pumps &amp; Ejectors</a>
+            <a href="gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Gas Fitting</a>
+            <a href="inspection.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Inspection &amp; Maintenance</a>
+          </div>
+        </div>
+      </div>
+      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../about.html">About</a>
+      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../contact.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="hidden lg:block text-[#002046] font-bold font-headline">(978) 332-4857</span>
+      <a href="../contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold hover:bg-primary-container transition-all active:scale-95 duration-200">Request Service</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-primary"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-[#f8f9ff] border-t border-outline-variant/20 px-8 py-4 space-y-3">
+    <a class="block font-headline font-bold text-[#44474e]" href="../index.html">Home</a>
+    <div>
+      <p class="block font-headline font-bold text-[#b6171e] mb-1">Services</p>
+      <div class="pl-4 space-y-2 pt-1 border-l-2 border-[#b6171e]/40">
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="heating.html">Heating</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="pipe-repair.html">Pipe Repair</a>
+        <a class="block text-sm font-label text-[#b6171e] font-bold" href="fixtures.html">Fixtures &amp; Installation</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="pumps.html">Pumps &amp; Ejectors</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="gas.html">Gas Fitting</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="inspection.html">Inspection &amp; Maintenance</a>
+      </div>
+    </div>
+    <a class="block font-headline font-bold text-[#44474e]" href="../about.html">About</a>
+    <a class="block font-headline font-bold text-[#44474e]" href="../contact.html">Contact</a>
+    <a class="block font-headline font-bold text-primary" href="tel:9783324857">(978) 332-4857</a>
+  </div>
+</nav>
+
+<main class="pt-24">
+  <!-- Hero -->
+  <section class="relative px-8 py-20 lg:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div class="z-10">
+        <span class="inline-block px-3 py-1 bg-surface-container-highest text-primary text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">Premium Installations</span>
+        <h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+          Fix the Plumbing You Use <span class="text-secondary">Every Day</span>
+        </h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">Elevate your home with professional fixture installations. From high-end kitchen faucets to spa-like master showers, we bring precision craftsmanship to every connection.</p>
+        <a href="../contact.html" class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-headline font-bold text-lg shadow-lg hover:shadow-secondary/40 transition-all inline-block">View Our Services</a>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+          <img alt="Luxury Bathroom Fixtures" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz6GuZZ_9w13eifClg1ODHf3kJfSRHRuEFyC1WtqOlxA3qg_52VQuBg14BhQlvmvIXTM0R9pi5PXz81o3GbLybT070C8N0UlP11ZhS4U5zxHw4v_6gc4iRW6NvHSChp45TAj0JTinTso44B64si-hzmKi17zWf6teJAYKIvpg9VxSuyMts2wkQCDzlaUg3S7_ESCOlCSsXkn8rlFrXAxchVIf9A7i3L4Nh2j5Wq2xprdDmc6khetURap_gLW3Z2bFDNRTKwDaAROq9"/>
+        </div>
+        <div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl hidden md:block max-w-xs">
+          <div class="flex items-center gap-4 mb-3">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">verified</span>
+            <span class="font-headline font-bold text-primary">Master Craftsman</span>
+          </div>
+          <p class="text-sm text-on-surface-variant">Expert installation of premium brands including Kohler, Delta, and Moen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low -z-10 rounded-l-[100px] translate-x-20"></div>
+  </section>
+
+  <!-- Services Bento Grid -->
+  <section class="px-8 py-24 bg-surface-container">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16">
+        <h2 class="text-3xl lg:text-4xl font-headline font-bold text-primary mb-4 tracking-tight">Installation Specialties</h2>
+        <div class="w-20 h-1 bg-secondary rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all h-64">
+          <img alt="Faucets &amp; Fixtures" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhf5_05CQ7f1MvA7eXC86vG9mXANni6cwjyeUEHgMRSSLct9umGRJ9-DQuw6-rOLhfv0hP_8dpuJ_LvhG5wWO_MMwjGnHOChE0f_aKUFD9KHy4Z1R-yEkkLCh1d3_vVPFbZhnfBQ8DXWuayozB870MWXmX5h6MWDfuIsrdcAQGfa--B_K9hDMqThnhuhUzib_3nDb2ovw_yb0g-QV0wq70bWEq9HFtw9dF5_TA7CVgXSP9qWWK3oC3LMKADfrs8hZRQjImBA3sfu7s"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+            <h3 class="text-2xl font-headline font-bold text-white mb-2">Faucets &amp; Fixtures</h3>
+            <p class="text-white/80 max-w-md">Precision mounting and leak-proof sealing for luxury hardware in kitchens and baths.</p>
+          </div>
+        </div>
+        <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all h-64">
+          <img alt="Toilets" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3THWak5trI3gVnzh9G9NErh5N_EGQeFE-NODjUCp-65Svq9QHXjc5QpajXyBZottmynLXzKUEEFA0Sg5UBzqU7EryaThAD95Rk2dRYkoCBXRwKZiKfJvxc-ILlJORojdPD3BerxqHqb2aS4Q8UNcREiPK1R7mS9hsfKVyOuCKNIqXYRNeLVDGtPXxpzlix6plk6cJPL-U4QY2GfqthJiAzNl6u-MPuu3vAbjRlKPeRh0x6H_qLDO2HqwtZMplcAAvGx0g2iQHvHU"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+            <h3 class="text-xl font-headline font-bold text-white mb-2">Toilets</h3>
+            <p class="text-white/80">Efficient water-saving models and comfort-height installations.</p>
+          </div>
+        </div>
+        <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all h-64">
+          <img alt="Sinks" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtxfohczqGv9c60mPqC7vkf2Wmg4YB9jHnrN6QzbB3gZZ0ngzTGNaV57emxzgE7mfon0HZQWOOM5PhrqwKo9jwaO5NLXmRb3lm_1BQZe9j3b_XB5bZ6SRadUfHShhKelwwjMmv6aXtD__1kQFVCky-hQhV_hOzIA2Z-Zg4FGyOm_I5WOqugABBtAn5oPKYTrqrSePAZHJqpwpzr1tTmwVcGVpRo3Rr6XZGKz_HiMx8Wvasi2lcgemNChJwvDNGJZZKXm40F3Ut2SYO"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+            <h3 class="text-xl font-headline font-bold text-white mb-2">Sinks</h3>
+            <p class="text-white/80">Undermount, farmhouse, and vessel sink expertise.</p>
+          </div>
+        </div>
+        <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all h-64">
+          <img alt="Tubs &amp; Showers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABC44dU2pEgVPFDvyzcRyew6PPkTTB9NNXLPg35FxuSuwBlcGVvPtx6rC9nyULlji664aH0UafocHhfQ7bUJq9fTHeytOqhaGyjImF5gQHyhIs7_r_Wg_DMRKgfU3XcyLuxAVG4_7EiJExQUUcZfGRt7iUOiWJVEhIf0U2ocv52fYRLaUO__ySspyoq6leNLGKAGsRBg1wyqw8GMOgIbIYUisboGVoKPwmpKDC5Xm9yKX0flQUt8sOOgFPETf2Vbv0Oi93VXIXhxsd"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+            <h3 class="text-xl font-headline font-bold text-white mb-2">Tubs &amp; Showers</h3>
+            <p class="text-white/80">Complete valve replacement and custom shower systems.</p>
+          </div>
+        </div>
+        <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all h-64">
+          <img alt="Kitchen &amp; Appliances" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDBNncb3dz9hNvG7Qgcmf8INokyATJXqp9J1MVARAMzR619Bhffp8RYF2UNiyG-UbbChlgUXmARPL1_HNSgq9uSqM7pci-j5ci4FNqFp8hVKFFc38iQRMqmAmgxThqUaKLa_dMwfmYyyuR-zMtW1VT8X121w2b6P_VconnpLR95iaB_XwwhT3rVQFD_Ph1XsV3a-VxB40ex95mFI6QL5fsfhksmCabfbE1lywBuxdoUo3v2FY2t1txJoXwiyrVfeI48b1laR9E6oY"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent p-8 flex flex-col justify-end">
+            <h3 class="text-xl font-headline font-bold text-white mb-2">Kitchen &amp; Appliance</h3>
+            <p class="text-white/80">Disposals, dishwashers, and ice makers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-8 py-24 bg-surface-container-low">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-4xl font-headline font-bold text-primary mb-4">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+        <details class="group bg-surface-container-lowest p-6 rounded-lg" open>
+          <summary class="flex justify-between items-center font-headline font-bold text-primary cursor-pointer list-none">
+            <span>When should I repair vs. replace my toilet?</span>
+            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="mt-4 text-on-surface-variant leading-relaxed">If your toilet requires frequent part replacements, has a hairline crack in the porcelain, or lacks the flushing power of modern low-flow models, replacement is often more cost-effective.</p>
+        </details>
+        <details class="group bg-surface-container-lowest p-6 rounded-lg">
+          <summary class="flex justify-between items-center font-headline font-bold text-primary cursor-pointer list-none">
+            <span>My garbage disposal is humming but not turning. What should I do?</span>
+            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="mt-4 text-on-surface-variant leading-relaxed">Turn off the unit immediately. Try using an Allen wrench in the bottom socket to manually rotate the impellers. If it still won't turn, it may be time for a professional replacement.</p>
+        </details>
+        <details class="group bg-surface-container-lowest p-6 rounded-lg">
+          <summary class="flex justify-between items-center font-headline font-bold text-primary cursor-pointer list-none">
+            <span>Can you install owner-supplied fixtures?</span>
+            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="mt-4 text-on-surface-variant leading-relaxed">Yes, we frequently install high-end fixtures purchased by our clients. We ensure all parts are compatible with your existing plumbing and install them to the highest standards.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-8 py-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-primary rounded-2xl p-12 lg:p-20 text-center relative overflow-hidden">
+        <div class="relative z-10">
+          <h2 class="text-4xl lg:text-6xl font-headline font-extrabold text-white mb-6">Install My New Fixture</h2>
+          <p class="text-on-primary-container text-lg mb-10 max-w-2xl mx-auto">Ready to upgrade your kitchen or bathroom? Schedule your professional installation today.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="../contact.html" class="bg-secondary text-on-secondary px-10 py-5 rounded-md font-headline font-bold text-xl hover:scale-105 transition-transform inline-block text-center">Request Service</a>
+            <a href="tel:9783324857" class="bg-transparent border-2 border-on-primary-container text-white px-10 py-5 rounded-md font-headline font-bold text-xl hover:bg-white/10 transition-all text-center">(978) 332-4857</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#e9eef9] text-[#002046] font-body">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16 max-w-7xl mx-auto">
+    <div>
+      <div class="text-lg font-bold text-[#002046] mb-4 font-headline">Viscarello Plumbing</div>
+      <p class="text-[#44474e] text-sm opacity-80 mb-6">Professional plumbing, heating, and gas fitting services delivered with integrity and master craftsmanship across Massachusetts.</p>
+      <a class="text-secondary font-bold flex items-center gap-2" href="tel:9783324857"><span class="material-symbols-outlined">call</span>(978) 332-4857</a>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-6">Quick Links</h4>
+      <ul class="space-y-3">
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="../index.html">Home</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="../index.html#services">Services</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="../about.html">About</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-6">Our Services</h4>
+      <ul class="space-y-3">
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="heating.html">Heating</a></li>
+        <li><a class="text-[#b6171e] underline" href="fixtures.html">Fixtures</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="gas.html">Gas Fitting</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="pumps.html">Pumps</a></li>
+        <li><a class="text-[#44474e] hover:text-[#b6171e] transition-colors" href="pipe-repair.html">Pipe Repair</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-primary/5 py-8 text-center text-xs text-[#44474e] opacity-70">© 2024 Viscarello Plumbing Heating &amp; Gas Fitting.</div>
+</footer>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');});
+</script>
+</body>
+</html>

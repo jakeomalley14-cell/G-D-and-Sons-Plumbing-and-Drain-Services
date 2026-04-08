@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inspection & Maintenance - Viscarello Plumbing Heating & Gas Fitting</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode:"class",
+    theme: { extend: { colors: {
+      "on-secondary":"#ffffff","surface":"#f8f9ff","on-surface":"#161c24",
+      "surface-container-low":"#eef4ff","on-primary-container":"#87a0cd","secondary":"#b6171e",
+      "on-primary":"#ffffff","surface-container":"#e9eef9","surface-container-lowest":"#ffffff",
+      "surface-container-highest":"#dde3ee","on-primary-fixed":"#001b3d","primary-fixed":"#d6e3ff",
+      "primary-container":"#1b365d","outline-variant":"#c4c6cf","surface-container-high":"#e3e8f4",
+      "primary":"#002046","secondary-container":"#da3433","on-surface-variant":"#44474e",
+      "outline":"#74777f","secondary-fixed":"#ffdad6","primary-fixed-dim":"#aec7f7"
+    }, borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
+    fontFamily:{"headline":["Manrope"],"body":["Inter"],"label":["Inter"]} } }
+  }
+</script>
+<style>
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .glass-nav{background:rgba(248,249,255,0.8);backdrop-filter:blur(12px);}
+  #mobile-menu{display:none;} #mobile-menu.open{display:block;}
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
+    <a href="../index.html" class="text-xl font-headline font-bold text-primary tracking-tight">Viscarello Plumbing</a>
+    <nav class="hidden md:flex items-center space-x-8">
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold" href="../index.html">Home</a>
+      <div class="relative group">
+        <button class="flex items-center gap-0.5 text-secondary font-bold border-b-2 border-secondary pb-1 font-headline">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 min-w-[220px]">
+          <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-1.5 overflow-hidden">
+            <a href="heating.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Heating</a>
+            <a href="pipe-repair.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pipe Repair</a>
+            <a href="fixtures.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Fixtures &amp; Installation</a>
+            <a href="pumps.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pumps &amp; Ejectors</a>
+            <a href="gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Gas Fitting</a>
+            <a href="inspection.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#b6171e] bg-[#eef4ff] font-bold">Inspection &amp; Maintenance</a>
+          </div>
+        </div>
+      </div>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold" href="../about.html">About</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-headline font-bold" href="../contact.html">Contact</a>
+    </nav>
+    <div class="flex items-center space-x-6">
+      <span class="hidden lg:block font-headline font-bold text-primary">(978) 332-4857</span>
+      <a href="../contact.html" class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold hover:scale-95 transition-transform duration-200 inline-block text-center">Request Service</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-primary"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-[#f8f9ff] border-t border-outline-variant/20 px-8 py-4 space-y-3">
+    <a class="block font-headline font-bold text-[#44474e]" href="../index.html">Home</a>
+    <div>
+      <p class="block font-headline font-bold text-secondary mb-1">Services</p>
+      <div class="pl-4 space-y-2 pt-1 border-l-2 border-secondary/40">
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="heating.html">Heating</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="pipe-repair.html">Pipe Repair</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="fixtures.html">Fixtures &amp; Installation</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="pumps.html">Pumps &amp; Ejectors</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="gas.html">Gas Fitting</a>
+        <a class="block text-sm font-label text-[#b6171e] font-bold" href="inspection.html">Inspection &amp; Maintenance</a>
+      </div>
+    </div>
+    <a class="block font-headline font-bold text-[#44474e]" href="../about.html">About</a>
+    <a class="block font-headline font-bold text-[#44474e]" href="../contact.html">Contact</a>
+    <a class="block font-headline font-bold text-primary" href="tel:9783324857">(978) 332-4857</a>
+  </div>
+</header>
+
+<main class="pt-24">
+  <!-- Hero -->
+  <section class="relative px-8 py-20 lg:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div class="z-10">
+
+        <h1 class="font-headline text-5xl lg:text-6xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">Catch Problems Early With Expert Inspection</h1>
+        <p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">Professional plumbing maintenance is more than a checklist. It's the technical assurance that your home's vital systems are operating at peak efficiency, protecting your property from unseen risks.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="../contact.html" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-headline font-bold hover:opacity-90 transition-opacity">Schedule Audit</a>
+          <div class="flex items-center gap-3 px-6 py-4 bg-surface-container-low rounded-lg">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">verified_user</span>
+            <span class="font-headline font-bold text-primary">Priority Support Included</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+          <img alt="Hands-on inspection of gas line connection" class="w-full h-full object-cover" src="../images/inspection-maintenance.webp"/>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
+          <p class="text-sm font-bold text-primary mb-2">Technical Integrity</p>
+          <p class="text-xs text-on-surface-variant leading-relaxed">Our master technicians use ultrasonic leak detection and thermal imaging for every whole-home audit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-surface-container-low -z-10 translate-x-1/4 skew-x-12"></div>
+  </section>
+
+  <!-- Service Tiers -->
+  <section class="px-8 py-24 bg-surface-container">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16">
+        <h2 class="font-headline text-4xl font-extrabold text-primary mb-4 tracking-tight">Structured Maintenance Tiers</h2>
+        <p class="text-on-surface-variant max-w-2xl">Tailored protection for your home's infrastructure, designed to prevent catastrophic failure and extend equipment lifespan.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <!-- Whole-Home Inspections -->
+        <div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-xl hover:shadow-lg transition-all border-l-4 border-primary">
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-4xl text-primary">analytics</span>
+            <span class="text-xs font-bold text-outline uppercase tracking-widest">ANNUAL PROTOCOL</span>
+          </div>
+          <h3 class="font-headline text-2xl font-bold text-primary mb-4">Whole-Home Inspections</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8">A comprehensive 50-point diagnostic encompassing main line health, pressure valve calibration, and visible piping integrity.</p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-sm font-medium text-on-surface"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Ultrasonic pipe wall analysis</li>
+            <li class="flex items-center gap-3 text-sm font-medium text-on-surface"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Main shut-off valve verification</li>
+            <li class="flex items-center gap-3 text-sm font-medium text-on-surface"><span class="material-symbols-outlined text-primary text-lg">check_circle</span> Drain line camera inspection</li>
+          </ul>
+        </div>
+        <!-- Preventative Maintenance -->
+        <div class="md:col-span-5 bg-primary text-on-primary p-10 rounded-xl relative overflow-hidden">
+          <div class="relative z-10">
+            <span class="material-symbols-outlined text-4xl mb-12 block" style="font-variation-settings:'FILL' 1;">build_circle</span>
+            <h3 class="font-headline text-2xl font-bold mb-4">Preventive Maintenance</h3>
+            <p class="text-on-primary-container text-sm leading-relaxed mb-6">Routine optimization for water heaters, boilers, and filtration systems. Our preemptive tuning reduces energy consumption by up to 15%.</p>
+            <a href="../contact.html" class="inline-flex items-center gap-2 font-headline font-bold text-secondary-fixed hover:gap-4 transition-all">
+              View Service Details <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+          <div class="absolute bottom-0 right-0 w-32 h-32 bg-primary-container/30 rounded-full blur-3xl -mb-10 -mr-10"></div>
+        </div>
+        <!-- Winterization -->
+        <div class="md:col-span-12 bg-surface-container-lowest p-10 rounded-xl flex flex-col lg:flex-row gap-12 items-center shadow-sm">
+          <div class="flex-1">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">ac_unit</span>
+              </div>
+              <h3 class="font-headline text-2xl font-bold text-primary">Winterization &amp; Seasonal Protection</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed mb-8 max-w-2xl">New England winters are brutal on exterior plumbing. Our seasonal protection service includes outdoor faucet insulation, secondary line draining, and heating system pressure checks.</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 rounded bg-surface-container-low border-l-2 border-secondary">
+                <p class="text-xs font-bold text-secondary uppercase mb-1">Pre-Winter</p>
+                <p class="text-sm font-medium">Outdoor Faucet Shutdown</p>
+              </div>
+              <div class="p-4 rounded bg-surface-container-low border-l-2 border-primary">
+                <p class="text-xs font-bold text-primary uppercase mb-1">Post-Winter</p>
+                <p class="text-sm font-medium">System Re-pressurization</p>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 w-full">
+            <div class="aspect-video rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+              <img alt="Copper pipes being insulated" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePEni6UzPPjOSXWyVb6lJUZA2HQz4uq0ub2NFYEnSv91Kqz1aeLYzxetfJzwXQwuyT74JafKAZ6dgN7jgOxgLifctmXT4eGdNpkNv2O2fop4dDDLPmictmrtb9rFtFKLAVhlV7lW4K6DzcqK2T67rZhz3q8801P4Y-iRjRnyOD1d5A4MleJ2slKX8az3hOrErBT1fgtYkfQBTq3aAx020H-EwpmN1PhjT9OZvaTrxPlmy5eSdN_ISZCWH0M7ObDz35vCsdhfLV--W"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Peace of Mind -->
+  <section class="px-8 py-24 bg-surface">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+      <div>
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-surface-container-low p-8 rounded-lg">
+            <p class="text-3xl font-headline font-extrabold text-primary mb-2">★</p>
+            <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Priority Scheduling</p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-lg mt-8">
+            <p class="text-3xl font-headline font-extrabold text-primary mb-2">100%</p>
+            <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Licensed &amp; Insured</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-headline text-4xl font-extrabold text-primary mb-6 tracking-tight">The Peace of Mind Protocol</h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-8">When you enroll in our maintenance program, you aren't just buying an inspection — you're securing Priority Support. Members move to the front of our scheduling queue whenever they need service.</p>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-start gap-4 p-4 rounded-lg bg-surface-container-highest/30">
+            <span class="material-symbols-outlined text-primary mt-1">verified</span>
+            <div>
+              <p class="font-bold text-primary">Documented Compliance</p>
+              <p class="text-sm text-on-surface-variant">Detailed digital reports for insurance and property valuation records.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-8 py-24 bg-surface-container-low">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-headline text-3xl font-extrabold text-primary mb-12 text-center">Maintenance Intelligence FAQ</h2>
+      <div class="space-y-4">
+        <div class="bg-surface-container-lowest rounded-lg overflow-hidden">
+          <div class="px-8 py-6">
+            <p class="font-headline font-bold text-primary mb-3">Is annual maintenance truly necessary for new homes?</p>
+            <p class="text-on-surface-variant leading-relaxed">Yes. Modern homes often have high-efficiency systems that require precise calibration to maintain their warranties. Early audits prevent small manufacturing defects from becoming major failures.</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg overflow-hidden">
+          <div class="px-8 py-6">
+            <p class="font-headline font-bold text-primary mb-3">How does maintenance affect my energy bills?</p>
+            <p class="text-on-surface-variant leading-relaxed">Sediment buildup in water heaters and unoptimized boiler settings can force systems to work 20–30% harder. Regular flushing and tuning restore peak thermal efficiency.</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest rounded-lg overflow-hidden">
+          <div class="px-8 py-6">
+            <p class="font-headline font-bold text-primary mb-3">What is included in Priority Support?</p>
+            <p class="text-on-surface-variant leading-relaxed">Priority Support means maintenance clients are dispatched first during high-volume periods — often within 2–4 hours of the call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="px-8 py-24 bg-primary relative overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+      <h2 class="font-headline text-4xl font-extrabold text-on-primary mb-6 tracking-tight">Schedule a Plumbing Inspection</h2>
+      <p class="text-on-primary-container text-lg max-w-2xl mb-10 leading-relaxed">Don't wait for a leak to tell you there's a problem. Secure your home's infrastructure with a professional audit today.</p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="../contact.html" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-headline font-bold hover:scale-95 transition-transform duration-200">Request Service</a>
+        <a href="tel:9783324857" class="border border-outline-variant/30 text-on-primary px-10 py-4 rounded-lg font-headline font-bold hover:bg-white/5 transition-colors">Call (978) 332-4857</a>
+      </div>
+    </div>
+    <div class="absolute inset-0 bg-[linear-gradient(135deg,_#002046_0%,_#1b365d_100%)] opacity-50"></div>
+  </section>
+</main>
+
+<footer class="bg-surface-container text-primary">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16">
+    <div>
+      <div class="text-lg font-bold text-primary mb-4 uppercase tracking-tighter">Viscarello Plumbing</div>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6">Leading New England with high-end plumbing, heating, and gas fitting solutions.</p>
+    </div>
+    <div>
+      <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary/60">Specialties</h4>
+      <nav class="flex flex-col space-y-3">
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="heating.html">Heating</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="gas.html">Gas Fitting</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="pipe-repair.html">Pipe Repair</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm underline decoration-secondary" href="inspection.html">Inspection &amp; Maintenance</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary/60">Quick Links</h4>
+      <nav class="flex flex-col space-y-3">
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="../index.html">Home</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="../about.html">About</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm" href="../contact.html">Contact</a>
+        <p class="text-xs text-on-surface-variant/70 mt-4">© 2024 Viscarello Plumbing Heating &amp; Gas Fitting.</p>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click',function(){document.getElementById('mobile-menu').classList.toggle('open');});
+</script>
+</body>
+</html>

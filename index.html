@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Viscarello Plumbing Heating & Gas Fitting</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<meta name="description" content="G, D & Sons Plumbing and Drain Services — your neighborhood plumber in Chicopee, MA. Licensed & insured. 90-day guarantee. Water heaters, drains, gas, fixtures. Call (413) 206-1256."/>
+<title>G, D & Sons Plumbing and Drain Services — Chicopee, MA | Your Neighborhood Plumber</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -14,377 +15,428 @@
       extend: {
         colors: {
           "secondary-fixed-dim": "#ffb3ac", "on-secondary": "#ffffff", "surface": "#f8f9ff",
-          "on-tertiary-container": "#f77d03", "on-tertiary": "#ffffff", "on-secondary-fixed": "#410003",
-          "tertiary-fixed-dim": "#ffb786", "surface-tint": "#465f88", "on-error-container": "#93000a",
-          "on-background": "#161c24", "secondary-fixed": "#ffdad6", "on-surface": "#161c24",
-          "inverse-primary": "#aec7f7", "surface-container-low": "#eef4ff", "surface-variant": "#dde3ee",
-          "surface-dim": "#d5dae5", "outline": "#74777f", "on-primary-container": "#87a0cd",
-          "secondary": "#b6171e", "on-tertiary-fixed-variant": "#723600", "on-secondary-fixed-variant": "#930010",
-          "surface-bright": "#f8f9ff", "inverse-on-surface": "#ecf1fc", "background": "#f8f9ff",
-          "on-primary": "#ffffff", "surface-container": "#e9eef9", "error": "#ba1a1a",
-          "surface-container-lowest": "#ffffff", "surface-container-highest": "#dde3ee",
-          "on-secondary-container": "#fffbff", "on-primary-fixed": "#001b3d",
-          "on-primary-fixed-variant": "#2e476f", "primary-fixed": "#d6e3ff", "error-container": "#ffdad6",
-          "tertiary": "#381800", "primary-container": "#1b365d", "primary-fixed-dim": "#aec7f7",
+          "on-tertiary-container": "#f77d03", "on-tertiary": "#ffffff", "on-background": "#161c24",
+          "on-surface": "#161c24", "inverse-primary": "#aec7f7", "surface-container-low": "#eef4ff",
+          "surface-variant": "#dde3ee", "outline": "#74777f", "on-primary-container": "#87a0cd",
+          "secondary": "#b6171e", "surface-bright": "#f8f9ff", "background": "#f8f9ff",
+          "on-primary": "#ffffff", "surface-container": "#e9eef9", "surface-container-lowest": "#ffffff",
+          "surface-container-highest": "#dde3ee", "on-primary-fixed": "#001b3d",
+          "primary-fixed": "#d6e3ff", "primary-container": "#1b365d", "primary-fixed-dim": "#aec7f7",
           "outline-variant": "#c4c6cf", "surface-container-high": "#e3e8f4", "primary": "#002046",
-          "inverse-surface": "#2b3139", "tertiary-fixed": "#ffdcc6", "secondary-container": "#da3433",
-          "tertiary-container": "#582900", "on-tertiary-fixed": "#311300", "on-surface-variant": "#44474e",
-          "on-error": "#ffffff"
+          "secondary-container": "#da3433", "on-surface-variant": "#44474e", "on-error": "#ffffff"
         },
         borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         fontFamily: { "headline": ["Manrope"], "body": ["Inter"], "label": ["Inter"] }
       },
-    },
+    }
   }
 </script>
 <style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
-  .text-glow { text-shadow: 0 0 20px rgba(255,255,255,0.2); }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+  .hero-gradient { background: linear-gradient(135deg, #002046 0%, #1b365d 100%); }
+  .glass-nav { background: rgba(248, 249, 255, 0.9); backdrop-filter: blur(20px); }
   #mobile-menu { display: none; }
   #mobile-menu.open { display: block; }
 </style>
 </head>
-<body class="bg-surface text-on-surface font-body antialiased">
+<body class="bg-surface text-on-surface font-body">
 
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-[#f8f9ff]/80 backdrop-blur-md shadow-sm transition-all duration-300">
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
   <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-    <a href="index.html" class="flex items-center gap-2">
-      <span class="text-xl font-headline font-bold text-[#002046] tracking-tight">Viscarello Plumbing</span>
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+        <span class="material-symbols-outlined" style="font-size:22px;">plumbing</span>
+      </span>
+      <span class="font-headline font-bold text-primary tracking-tight leading-tight">
+        <span class="block text-lg">G, D &amp; Sons</span>
+        <span class="block text-[10px] font-medium text-on-surface-variant tracking-widest uppercase">Plumbing &amp; Drain</span>
+      </span>
     </a>
-    <nav class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
-      <a class="text-[#b6171e] font-bold border-b-2 border-[#b6171e] pb-1" href="index.html">Home</a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="text-primary font-headline font-bold border-b-2 border-secondary pb-1" href="index.html">Home</a>
       <div class="relative group">
-        <button class="flex items-center gap-0.5 text-[#44474e] hover:text-[#002046] transition-colors font-headline font-bold tracking-tight">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
-        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 min-w-[220px]">
+        <button class="flex items-center gap-0.5 text-on-surface-variant hover:text-primary transition-colors font-body">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 min-w-[240px]">
           <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-1.5 overflow-hidden">
-            <a href="services/heating.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Heating</a>
+            <a href="services/water-heaters.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Water Heaters</a>
+            <a href="services/drains.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Drains &amp; Sewers</a>
             <a href="services/pipe-repair.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pipe Repair</a>
             <a href="services/fixtures.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Fixtures &amp; Installation</a>
-            <a href="services/pumps.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pumps &amp; Ejectors</a>
-            <a href="services/gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Gas Fitting</a>
-            <a href="services/inspection.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Inspection &amp; Maintenance</a>
+            <a href="services/gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Gas Services</a>
+            <a href="services/commercial.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Commercial</a>
           </div>
         </div>
       </div>
-      <a class="text-[#44474e] hover:text-[#002046] transition-colors" href="about.html">About</a>
-      <a class="text-[#44474e] hover:text-[#002046] transition-colors" href="contact.html">Contact</a>
-    </nav>
-    <div class="flex items-center gap-4">
-      <a class="hidden lg:block font-headline font-bold text-[#002046] transition-transform active:scale-95" href="tel:9783324857">(978) 332-4857</a>
-      <a href="contact.html" class="bg-secondary text-on-secondary px-6 py-2.5 rounded font-headline font-bold active:scale-95 duration-200 transition-all hover:bg-secondary-container">Request Service</a>
-      <button id="menu-toggle" class="md:hidden p-2 text-primary" aria-label="Toggle menu">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="about.html">About</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors font-body" href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="tel:4132061256" class="hidden lg:block font-headline font-bold text-primary hover:text-secondary transition-colors">(413) 206-1256</a>
+      <a href="contact.html" class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-headline font-bold hover:bg-secondary-container transition-all active:scale-95 duration-200">Call Today</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-primary"><span class="material-symbols-outlined">menu</span></button>
     </div>
   </div>
   <div id="mobile-menu" class="md:hidden bg-[#f8f9ff] border-t border-outline-variant/20 px-8 py-4 space-y-3">
-    <a class="block font-headline font-bold text-[#b6171e]" href="index.html">Home</a>
+    <a class="block font-headline font-bold text-primary border-b-2 border-secondary pb-1 w-fit" href="index.html">Home</a>
     <div>
       <p class="block font-headline font-bold text-[#44474e] mb-1">Services</p>
       <div class="pl-4 space-y-2 pt-1 border-l-2 border-outline-variant/30">
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/heating.html">Heating</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/water-heaters.html">Water Heaters</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/drains.html">Drains &amp; Sewers</a>
         <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/pipe-repair.html">Pipe Repair</a>
         <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/fixtures.html">Fixtures &amp; Installation</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/pumps.html">Pumps &amp; Ejectors</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/gas.html">Gas Fitting</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/inspection.html">Inspection &amp; Maintenance</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/gas.html">Gas Services</a>
+        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="services/commercial.html">Commercial</a>
       </div>
     </div>
-    <a class="block font-headline font-bold text-[#44474e] hover:text-primary" href="about.html">About</a>
-    <a class="block font-headline font-bold text-[#44474e] hover:text-primary" href="contact.html">Contact</a>
-    <a class="block font-headline font-bold text-primary" href="tel:9783324857">(978) 332-4857</a>
+    <a class="block font-headline font-bold text-[#44474e]" href="about.html">About</a>
+    <a class="block font-headline font-bold text-[#44474e]" href="contact.html">Contact</a>
+    <a class="block font-headline font-bold text-primary" href="tel:4132061256">(413) 206-1256</a>
   </div>
-</header>
+</nav>
 
-<main>
+<main class="pt-24">
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <img alt="Professional copper piping installation" class="w-full h-full object-cover" src="images/hero-copper-pipes.webp"/>
-      <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-      <div class="max-w-2xl">
-
-        <h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-tight tracking-tighter mb-6">
-          Structural Integrity <br/><span class="text-secondary">for Your Home</span>
+  <section class="relative overflow-hidden px-8 py-20 md:py-28 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="z-10">
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="bg-primary text-on-primary text-xs font-bold px-3 py-1.5 rounded-sm tracking-widest uppercase">Licensed &amp; Insured</span>
+          <span class="bg-secondary text-on-secondary text-xs font-bold px-3 py-1.5 rounded-sm tracking-widest uppercase">90-Day Guarantee</span>
+          <span class="bg-surface-container-highest text-primary text-xs font-bold px-3 py-1.5 rounded-sm tracking-widest uppercase">11+ Years Experience</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.05] mb-6">
+          Your Neighborhood <span class="text-secondary">Plumber</span>
         </h1>
-        <p class="text-xl text-surface-container-low leading-relaxed mb-10 font-medium">
-          Licensed master plumbers serving Greater Boston. Viscarello handles everything from leaky pipes to full heating systems. Local, reliable, and honest from the first call.
+        <p class="text-lg text-on-surface-variant max-w-lg leading-relaxed mb-8">
+          G, D &amp; Sons Plumbing and Drain Services is a family-owned, one-person operation serving Chicopee and all of Western Massachusetts. Personalized service from start to finish — every job, every time.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="contact.html" class="bg-secondary text-on-secondary px-10 py-4 rounded-md font-headline font-bold text-lg hover:shadow-lg transition-all active:scale-95 text-center">
-            Request Service Now
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:4132061256" class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-headline font-extrabold text-lg shadow-lg hover:bg-secondary-container transition-all active:scale-95 duration-200 inline-flex items-center gap-2">
+            <span class="material-symbols-outlined">call</span> Call (413) 206-1256
           </a>
-          <a class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-md font-headline font-bold text-lg hover:bg-white/20 transition-all" href="tel:9783324857">
-            <span class="material-symbols-outlined">call</span>
-            (978) 332-4857
+          <a href="contact.html" class="bg-surface-container-highest text-primary px-8 py-4 rounded-lg font-headline font-extrabold text-lg hover:bg-surface-container-high transition-all active:scale-95 duration-200">
+            Request Service
           </a>
         </div>
+        <p class="text-sm text-on-surface-variant mt-4">Or text us at <a class="font-bold text-primary hover:text-secondary" href="tel:4136867486">(413) 686-7486</a> — both lines accept calls and texts.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Services Bento Grid -->
-  <section class="py-24 bg-surface" id="services">
-    <div class="max-w-7xl mx-auto px-8">
-      <div class="mb-16 text-center">
-        <h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Precision Services</h2>
-        <p class="text-on-surface-variant max-w-2xl mx-auto">Expert engineering and meticulous execution for every system in your home. We don't just fix; we fortify.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Service 1 -->
-        <a href="services/heating.html" class="group relative overflow-hidden rounded-xl bg-primary h-[400px]">
-          <img alt="Modern high-efficiency boiler system" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7FS9UrxOCi5D-N8CJlGFqNSCqJRCfOmwu_AYWRFJ1oRRn09BKNxGq-Gk6idvMLaOATy1NmnjSxqPB7sMBl5999VrynAqjXMnV0WqSXP2UzYEJr9abWa-Y1og1l6gaYqJcyS3FE0VK9ils6yvY33GShrZ9oLKhaMoCNqxMnfqA7EUonilKrPvZeT-AyJpV-fo3EwEyffNO9Ta049fm1IAaJknxO05j50xvGGsTO1Ms739gwoSKaeZtTL7zE7WBF4ChxdqrUym53slC"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-2xl font-bold text-white mb-2">Heating Systems</h3>
-            <p class="text-surface-variant mb-4">High-efficiency boiler installations and specialized hydronic heating solutions.</p>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-        <!-- Service 2 -->
-        <a href="services/pipe-repair.html" class="md:col-span-2 group relative overflow-hidden rounded-xl bg-primary h-[400px]">
-          <img alt="Professional plumber soldering copper pipe" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfHFGC02TTsXr7SA5YFCN5tru9By19nwDhqeVQLtsYH-iKfZ8ORV_oCoHiG4iFQMUh1jvxgG1T8UUZbynB9gk067tR3C0jOeqB83xSzljmSQo2vKnwa3I7pZeaelUrx95XLgF2Bj3PYPaBYxfHHQAW2qGIeMR7i5_1tN7uswN8a8Vf6XktvBsNu_fLrVtaYtqKY3Qb6mOmvhYDz-mWyb8q4T_zz-VQiBU_5OLBrgQVtIX_FnOkXNF_O1LFiI_6ZTlCvSNXaDoMw0Ya"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-3xl font-bold text-white mb-2">Expert Pipe Repair</h3>
-            <p class="text-surface-variant max-w-md">Seamless structural repairs for copper, PEX, and cast iron systems using non-invasive techniques.</p>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 mt-4 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-        <!-- Service 3 -->
-        <a href="services/fixtures.html" class="group relative overflow-hidden rounded-xl bg-surface-container h-[350px]">
-          <img alt="Luxury matte black bathroom faucet" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABTZfeit9tko4B6dhgV6rK2f_JG6k-Rn7uRBRxVu_2VYIiDqUx-1VLSg6ev8d6X6xbjOKw6qBmBuRtpfcTWEhYpUB4khLPw60cnRu8hvLaO--9uC9e9LYsJ0Qehd7X4Xx-7ms4GBp8l59ZwedzBzImb416Iwjuv4p_tLJ4KAKpp5gn5Xuh-au6BAqG2hkuDjd3MifDzkvrtTQAYnmG87s8HduqqokTU-PKR8IHpqzEusBkpiEN2B7D508kQWthsA8yuVhDkRYYnDKG"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-2xl font-bold text-white mb-2">Fixtures</h3>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-        <!-- Service 4 -->
-        <a href="services/gas.html" class="group relative overflow-hidden rounded-xl bg-surface-container h-[350px]">
-          <img alt="Industrial style gas line regulator" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtTYQDJ7uX7L9IE_lze94Bq7PAMgsoY-EHZuqWAycd6B99wMJlsNSgOwgGIiPcvJdbXa1ujTKPth1Rw075tLshOARTmiYhmkPaaKsZUoonhkkViFyS5egnXCbwQDJHu82r1nvzrzJAO3YoFQBiMh1V9VaFeKLf5vgH_fBl_HTCxljaRq8DTYwcqGBv5mefHWht7JEXQsewBeDJ7vK2Mceupnvz8J0T8iywUJIGz5uzhqRFCM4JZgWt25-aO3z9oNcPhzJ2W8XHqWEs"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-2xl font-bold text-white mb-2">Gas Fitting</h3>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-        <!-- Service 5 -->
-        <a href="services/pumps.html" class="group relative overflow-hidden rounded-xl bg-surface-container h-[350px]">
-          <img alt="Heavy duty sump pump installed in basement" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgAt3H1ghm7QczHzK6l7iKwVcj74rhPKpiyIty9G0pk88-NSMhitlWO54HnEvE9cMctsMPOZSnzRaT-IXmG5qjOcJEoM1TFL21KumwxDIg0b5g7WUGLiJhiVzn_8IJHQdv_UAR2L2sONnfRf1SBpF6il3vc7aCiEdoi-JPP65V_7YUQ3nm8xfgdXYk55B-4NJnwhFo9Dj3hRxp0QuoY9_HH9PXb5KCmMdhLNlvfAK0QCJcpmKmET-YNcjsTs4d-7B5SAWGDBIv-mhp"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-2xl font-bold text-white mb-2">Pumps &amp; Ejectors</h3>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-        <!-- Service 6 -->
-        <a href="services/inspection.html" class="group relative overflow-hidden rounded-xl bg-surface-container h-[350px]">
-          <img alt="Hands-on inspection of gas line connection" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="images/inspection-maintenance.webp"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
-          <div class="absolute bottom-0 p-8">
-            <h3 class="font-headline text-2xl font-bold text-white mb-2">Inspection &amp; Maintenance</h3>
-            <span class="text-secondary font-bold inline-flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Section -->
-  <section class="py-24 bg-surface-container">
-    <div class="max-w-7xl mx-auto px-8">
-      <div class="flex flex-col lg:flex-row gap-16 items-center">
-        <div class="lg:w-1/2">
-          <h2 class="font-headline text-4xl font-extrabold text-primary mb-8">The Viscarello Standard</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div class="space-y-4">
-              <div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded">
-                <span class="material-symbols-outlined">verified</span>
-              </div>
-              <h4 class="font-headline font-bold text-lg">Master Level Craftsmanship</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Not just technicians—licensed masters of the trade with deep field intelligence.</p>
-            </div>
-            <div class="space-y-4">
-              <div class="w-12 h-12 flex items-center justify-center bg-secondary text-white rounded">
-                <span class="material-symbols-outlined">payments</span>
-              </div>
-              <h4 class="font-headline font-bold text-lg">Upfront Pricing</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Transparent, flat-rate pricing. No surprises, no hidden fees, just honest structural work.</p>
-            </div>
-            <div class="space-y-4">
-              <div class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded">
-                <span class="material-symbols-outlined">support_agent</span>
-              </div>
-              <h4 class="font-headline font-bold text-lg">Responsive Service</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Prompt scheduling and dependable communication from first call to final walkthrough.</p>
-            </div>
-            <div class="space-y-4">
-              <div class="w-12 h-12 flex items-center justify-center bg-secondary text-white rounded">
-                <span class="material-symbols-outlined">foundation</span>
-              </div>
-              <h4 class="font-headline font-bold text-lg">Local Heritage</h4>
-              <p class="text-on-surface-variant text-sm leading-relaxed">Deep roots in Lynn and Greater Boston. We know the unique plumbing needs of the region's homes.</p>
-            </div>
-          </div>
+      <div class="relative">
+        <div class="aspect-square rounded-lg overflow-hidden shadow-2xl">
+          <img class="w-full h-full object-cover" alt="Copper piping infrastructure" src="images/hero-copper-pipes.webp"/>
         </div>
-        <div class="lg:w-1/2 relative">
-          <div class="absolute -inset-4 bg-primary/5 rounded-2xl blur-2xl"></div>
-          <img alt="Vintage plumbing wrench on architectural blueprint" class="relative rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5iFnsOdqpmkBaYteli0NmS20rAl1l9De1TXLp684a1VmSsj8iLjzTiScvoM7FZY3COwKdEN2fp_80QBFUqufdl1Ozhe470RuFO4axk4g9qFz-BqiJAkzt9Cvjs5GB75OUSmOnL4ORUu58eo6hIFroxpGkb3h_bENKbBCu9kPSHzuxmy8QOc2ZghYWGxxegJ2OI5aa5xX-LjhqAgb7GHGlGCB76gxIUxYFtVpA3MEt6ZyhNJjyzH-KZxEZ-xP-DXjffJGwGZHs_GS5"/>
+        <div class="absolute -bottom-6 -left-6 bg-primary text-on-primary p-6 rounded-lg shadow-2xl max-w-[220px] hidden md:block">
+          <p class="text-xs font-label uppercase tracking-widest opacity-80 mb-1">Owner / Operator</p>
+          <p class="font-headline font-bold text-xl leading-tight">Glen White</p>
+          <p class="text-sm opacity-80">Licensed Journeyman Plumber</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Reviews Section -->
-  <section class="py-24 bg-surface">
-    <div class="max-w-7xl mx-auto px-8">
-      <h2 class="font-headline text-4xl font-extrabold text-primary mb-16 text-center">Trusted by Your Neighbors</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
-          <div class="flex text-on-tertiary-container mb-4">
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-          </div>
-          <p class="text-on-surface mb-8 italic leading-relaxed">"Viscarello saved our basement during the big storm last winter. Their response time was incredible, and the new sump pump system is flawless."</p>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-primary-container text-white rounded-full flex items-center justify-center font-bold">DC</div>
-            <div>
-              <p class="font-bold">Debra C.</p>
-              <p class="text-xs text-on-surface-variant">Lynn, MA</p>
-            </div>
-          </div>
+  <!-- About Snippet -->
+  <section class="bg-surface-container py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="text-secondary font-label font-bold text-xs tracking-widest uppercase">About G, D &amp; Sons</span>
+          <h2 class="text-3xl md:text-4xl font-headline font-bold text-on-surface mt-2 mb-6">A Family-Owned Operation Built on 11+ Years of Experience</h2>
+          <p class="text-on-surface-variant leading-relaxed mb-6">
+            G, D &amp; Sons Plumbing and Drain Services is owned and operated by Glen White, a licensed journeyman plumber based in Chicopee, MA. With over 11 years of hands-on industry experience, Glen brings the kind of personalized attention that only a one-person operation can offer.
+          </p>
+          <p class="text-on-surface-variant leading-relaxed mb-8">
+            From sewer ejector pumps and toilet rebuilds to drain cleaning and full pipe repairs, every job is handled start to finish by the same trusted professional — backed by a 90-day guarantee on all work.
+          </p>
+          <a href="about.html" class="inline-flex items-center gap-2 text-secondary font-headline font-bold hover:translate-x-1 transition-transform">
+            Meet Glen <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
         </div>
-        <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
-          <div class="flex text-on-tertiary-container mb-4">
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+        <div class="md:col-span-7 grid grid-cols-2 gap-4">
+          <div class="bg-primary text-on-primary p-8 rounded-lg">
+            <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">verified</span>
+            <h3 class="font-headline font-bold text-lg mb-2">Licensed &amp; Insured</h3>
+            <p class="text-sm opacity-80">Permit-compliant Massachusetts journeyman plumber.</p>
           </div>
-          <p class="text-on-surface mb-8 italic leading-relaxed">"True professionals. They explained the whole boiler replacement process and the pricing was exactly what they quoted. Highly recommend."</p>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-primary-container text-white rounded-full flex items-center justify-center font-bold">BP</div>
-            <div>
-              <p class="font-bold">Bill P.</p>
-              <p class="text-xs text-on-surface-variant">Swampscott, MA</p>
-            </div>
+          <div class="bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high translate-y-8">
+            <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">handshake</span>
+            <h3 class="font-headline font-bold text-lg text-primary mb-2">Family-Owned</h3>
+            <p class="text-sm text-on-surface-variant">One person, one standard. Personal attention every time.</p>
           </div>
-        </div>
-        <div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
-          <div class="flex text-on-tertiary-container mb-4">
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <div class="bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high">
+            <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">workspace_premium</span>
+            <h3 class="font-headline font-bold text-lg text-primary mb-2">90-Day Guarantee</h3>
+            <p class="text-sm text-on-surface-variant">Quality work, backed in writing on every job.</p>
           </div>
-          <p class="text-on-surface mb-8 italic leading-relaxed">"The level of detail in their inspection was amazing. I feel much safer knowing our gas lines are up to code and professionally secured."</p>
-          <div class="flex items-center gap-4">
-            <div class="w-10 h-10 bg-primary-container text-white rounded-full flex items-center justify-center font-bold">JV</div>
-            <div>
-              <p class="font-bold">Jessica V.</p>
-              <p class="text-xs text-on-surface-variant">Saugus, MA</p>
-            </div>
+          <div class="bg-primary text-on-primary p-8 rounded-lg translate-y-8">
+            <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">schedule</span>
+            <h3 class="font-headline font-bold text-lg mb-2">11+ Years</h3>
+            <p class="text-sm opacity-80">Hands-on industry experience you can rely on.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Service Area Section -->
-  <section class="py-24 bg-surface-container-low">
-    <div class="max-w-7xl mx-auto px-8">
-      <div class="flex flex-col lg:flex-row items-stretch overflow-hidden rounded-2xl bg-white shadow-xl">
-        <div class="lg:w-1/3 p-12 bg-primary text-white">
-          <h2 class="font-headline text-3xl font-extrabold mb-6">Regional Domain</h2>
-          <p class="text-primary-fixed mb-8">Strategically positioned in Lynn to serve the entire Greater Boston infrastructure network.</p>
-          <ul class="space-y-4">
-            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span> Lynn, MA (HQ)</li>
-            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span> Swampscott &amp; Marblehead</li>
-            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span> Saugus &amp; Peabody</li>
-            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span> Salem &amp; Beverly</li>
-            <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">location_on</span> North Shore Communities</li>
-          </ul>
+  <!-- Services Grid -->
+  <section class="py-24 px-8 max-w-7xl mx-auto" id="services">
+    <div class="flex flex-col items-center text-center mb-16">
+      <span class="text-secondary font-label font-bold text-xs tracking-widest uppercase">What We Do</span>
+      <h2 class="text-4xl font-headline font-bold text-on-surface mt-2 mb-4">Full-Service Plumbing for Western Mass</h2>
+      <div class="h-1 w-24 bg-secondary"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="services/water-heaters.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">water_heater</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Water Heaters</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Tank, tankless, hybrid, and oil-fired installations. Repair, replacement, and diagnostics.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+      <a href="services/drains.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">plumbing</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Drains &amp; Sewers</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Drain cleaning, sewer line repair, snaking, house trap removal, and sewer ejector pumps.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+      <a href="services/pipe-repair.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">build</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Pipe Repair</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Cast iron pipe repair, water line replacement, stack lines, and full pipe repairs.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+      <a href="services/fixtures.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">faucet</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Fixtures &amp; Installation</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Faucets, toilets (including ADA), shut-off valves, outdoor spigots, and bathroom vanities.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+      <a href="services/gas.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">local_fire_department</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Gas Services</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Gas stove installation, gas line repair, and gas meter lock-out response. Permit-compliant.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+      <a href="services/commercial.html" class="group bg-surface-container-lowest p-8 rounded-lg border-2 border-surface-container-high hover:border-secondary hover:shadow-xl transition-all">
+        <span class="material-symbols-outlined text-4xl text-secondary mb-4 block">store</span>
+        <h3 class="text-xl font-headline font-bold text-primary mb-3">Commercial</h3>
+        <p class="text-sm text-on-surface-variant mb-4">Urinals, commercial fixtures, and professional plumbing solutions for businesses.</p>
+        <span class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-on-background text-surface py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="text-secondary-fixed-dim font-label font-bold text-xs tracking-widest uppercase">Why Choose G, D &amp; Sons</span>
+        <h2 class="text-4xl font-headline font-bold mt-2">Six Reasons Neighbors Call Glen First</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-primary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">verified_user</span>
+          <h3 class="font-headline font-bold text-xl mb-2">Licensed &amp; Insured</h3>
+          <p class="text-sm text-on-primary-container">Massachusetts licensed journeyman plumber with full insurance coverage on every job.</p>
         </div>
-        <div class="lg:w-2/3 min-h-[400px] relative">
-          <iframe
-            class="absolute inset-0 w-full h-full border-0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Lynn,MA&z=11&output=embed"
-            title="Map of Greater Boston and North Shore service area"></iframe>
+        <div class="bg-secondary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl mb-4 block">workspace_premium</span>
+          <h3 class="font-headline font-bold text-xl mb-2">90-Day Guarantee</h3>
+          <p class="text-sm opacity-90">Every job is backed by a 90-day workmanship guarantee. We stand behind what we install.</p>
+        </div>
+        <div class="bg-primary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">schedule</span>
+          <h3 class="font-headline font-bold text-xl mb-2">11+ Years Experience</h3>
+          <p class="text-sm text-on-primary-container">Over a decade of hands-on industry expertise in residential and commercial plumbing.</p>
+        </div>
+        <div class="bg-primary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">person</span>
+          <h3 class="font-headline font-bold text-xl mb-2">One-Person Service</h3>
+          <p class="text-sm text-on-primary-container">No subcontractors, no rotating crews. Glen handles every job from start to finish.</p>
+        </div>
+        <div class="bg-primary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">family_restroom</span>
+          <h3 class="font-headline font-bold text-xl mb-2">Family-Owned</h3>
+          <p class="text-sm text-on-primary-container">A locally owned, family-run business that treats neighbors like neighbors.</p>
+        </div>
+        <div class="bg-primary p-8 rounded-lg">
+          <span class="material-symbols-outlined text-4xl text-secondary-fixed-dim mb-4 block">assignment_turned_in</span>
+          <h3 class="font-headline font-bold text-xl mb-2">Permit-Compliant</h3>
+          <p class="text-sm text-on-primary-container">Licensed for Massachusetts permit work, including gas line repair and meter lock-outs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Bottom CTA -->
-  <section class="py-24 relative overflow-hidden">
-    <div class="absolute inset-0 bg-primary-container"></div>
-    <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary skew-x-12 translate-x-24 opacity-20"></div>
-    <div class="relative z-10 max-w-4xl mx-auto text-center px-8">
-      <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to Secure Your Home's Systems?</h2>
-      <p class="text-xl text-primary-fixed mb-12">Don't wait for a structural failure. Get the master-level expertise your property deserves today.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-6">
-        <a href="contact.html" class="bg-secondary text-on-secondary px-12 py-5 rounded-md font-headline font-bold text-xl hover:bg-secondary-container transition-all shadow-lg active:scale-95 text-center">
-          Request Service
-        </a>
-        <a class="flex items-center justify-center gap-4 text-white text-2xl font-bold font-headline border-b-2 border-white/20 pb-1 hover:border-white transition-all" href="tel:9783324857">
-          <span class="material-symbols-outlined">phone_in_talk</span>
-          (978) 332-4857
-        </a>
+  <!-- Promotions -->
+  <section class="py-24 px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-secondary font-label font-bold text-xs tracking-widest uppercase">Special Offers</span>
+      <h2 class="text-4xl font-headline font-bold text-on-surface mt-2 mb-4">Save on Your Next Job</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">Honest pricing and current promotions for our Western Mass neighbors. Mention this page when you call.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-primary text-on-primary p-8 rounded-lg shadow-xl border-t-4 border-secondary">
+        <p class="text-5xl font-headline font-extrabold text-secondary-fixed-dim mb-2">$200 <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl mb-2">Tank Water Heater Install</h3>
+        <p class="text-sm text-on-primary-container">Any 40–50 gallon water heater installation.</p>
+      </div>
+      <div class="bg-secondary text-on-secondary p-8 rounded-lg shadow-xl">
+        <p class="text-5xl font-headline font-extrabold mb-2">$400 <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl mb-2">Tankless Water Heater</h3>
+        <p class="text-sm opacity-90">Any tankless water heater installation.</p>
+      </div>
+      <div class="bg-surface-container-lowest border-2 border-primary p-8 rounded-lg">
+        <p class="text-5xl font-headline font-extrabold text-secondary mb-2">15% <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl text-primary mb-2">Military Personnel</h3>
+        <p class="text-sm text-on-surface-variant">Thank you for your service. Discount on all work.</p>
+      </div>
+      <div class="bg-surface-container-lowest border-2 border-primary p-8 rounded-lg">
+        <p class="text-5xl font-headline font-extrabold text-secondary mb-2">15% <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl text-primary mb-2">Senior Citizens</h3>
+        <p class="text-sm text-on-surface-variant">A discount for our senior neighbors on every job.</p>
+      </div>
+      <div class="bg-surface-container-lowest border-2 border-primary p-8 rounded-lg">
+        <p class="text-5xl font-headline font-extrabold text-secondary mb-2">10% <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl text-primary mb-2">Friends &amp; Family</h3>
+        <p class="text-sm text-on-surface-variant">A friend of yours is a friend of ours.</p>
+      </div>
+      <div class="bg-primary text-on-primary p-8 rounded-lg shadow-xl border-t-4 border-secondary">
+        <p class="text-5xl font-headline font-extrabold text-secondary-fixed-dim mb-2">10% <span class="text-2xl">OFF</span></p>
+        <h3 class="font-headline font-bold text-xl mb-2">Spring Special</h3>
+        <p class="text-sm text-on-primary-container">All installations — seasonal offer.</p>
+      </div>
+    </div>
+    <p class="text-center text-sm text-on-surface-variant mt-8">Discounts cannot be combined. Call <a class="font-bold text-secondary" href="tel:4132061256">(413) 206-1256</a> for current offers.</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-on-background text-surface py-24 px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto relative">
+      <span class="material-symbols-outlined text-9xl absolute -top-12 -left-12 opacity-10 select-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+      <div class="text-center mb-16 relative z-10">
+        <span class="text-secondary-fixed-dim font-label font-bold text-xs tracking-widest uppercase">What Neighbors Are Saying</span>
+        <h2 class="text-4xl font-headline font-extrabold mt-2 tracking-tight">The Words of Our Customers</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+        <div class="border-l-4 border-secondary pl-6">
+          <p class="text-xl font-headline italic leading-snug mb-4 text-surface-bright">"Glenn White G &amp; D Plumbing in Chicopee MA — THANK YOU FOR GREAT SERVICE!"</p>
+          <p class="font-bold tracking-widest uppercase text-xs text-secondary-fixed-dim">— Bernadette Duncan</p>
+        </div>
+        <div class="border-l-4 border-secondary pl-6">
+          <p class="text-xl font-headline italic leading-snug mb-4 text-surface-bright">"Awesome work."</p>
+          <p class="font-bold tracking-widest uppercase text-xs text-secondary-fixed-dim">— Shirley Lussier · ADA Toilet Install</p>
+        </div>
+        <div class="border-l-4 border-secondary pl-6">
+          <p class="text-xl font-headline italic leading-snug mb-4 text-surface-bright">"Looks great."</p>
+          <p class="font-bold tracking-widest uppercase text-xs text-secondary-fixed-dim">— MatthewandRebekah White · Tankless Install</p>
+        </div>
+        <div class="border-l-4 border-secondary pl-6">
+          <p class="text-xl font-headline italic leading-snug mb-4 text-surface-bright">"Does great job."</p>
+          <p class="font-bold tracking-widest uppercase text-xs text-secondary-fixed-dim">— Paul Domina</p>
+        </div>
+        <div class="border-l-4 border-secondary pl-6">
+          <p class="text-xl font-headline italic leading-snug mb-4 text-surface-bright">"Nice job!"</p>
+          <p class="font-bold tracking-widest uppercase text-xs text-secondary-fixed-dim">— Walter Valentin</p>
+        </div>
+        <div class="border-l-4 border-primary-fixed-dim pl-6 bg-primary/30 p-6 rounded-lg">
+          <p class="text-sm font-label uppercase tracking-widest text-secondary-fixed-dim mb-2">Trusted On</p>
+          <p class="font-headline font-bold text-lg leading-snug">Google · Nextdoor · Thumbtack · Facebook</p>
+          <p class="text-sm opacity-80 mt-2">Read more reviews from real customers across Western Mass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="py-24 px-8 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1 rounded-lg overflow-hidden shadow-sm h-96">
+        <iframe
+          class="w-full h-full border-0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Chicopee,MA&z=9&output=embed"
+          title="Map of Western Massachusetts service area"></iframe>
+      </div>
+      <div class="order-1 md:order-2">
+        <span class="text-secondary font-label font-bold text-xs tracking-widest uppercase">Service Area</span>
+        <h2 class="text-3xl md:text-4xl font-headline font-bold text-on-surface mt-2 mb-6">Proudly Serving Western Massachusetts</h2>
+        <p class="text-on-surface-variant mb-8">Headquartered in Chicopee, MA. Glen serves homes and businesses throughout Western Mass — from Berkshire County to Hampden County and everything in between.</p>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Chicopee, MA</span></div>
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Hampden County</span></div>
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Berkshire County</span></div>
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Springfield Area</span></div>
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Holyoke</span></div>
+          <div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-lg">location_on</span><span>Western Mass</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-24 px-8">
+    <div class="max-w-4xl mx-auto p-12 text-center hero-gradient shadow-2xl relative overflow-hidden rounded-lg">
+      <div class="relative z-10">
+        <h2 class="text-4xl md:text-5xl font-headline font-extrabold text-on-primary mb-6">Don't Wait Until It Gets Worse</h2>
+        <p class="text-on-primary-container text-lg mb-10 max-w-2xl mx-auto">Fast response, licensed and insured, 90-day guarantee on every job. Glen is standing by to help.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:4132061256" class="bg-secondary text-on-secondary px-10 py-4 rounded-lg font-headline font-extrabold text-lg shadow-lg hover:bg-secondary-container transition-all active:scale-95 duration-200 inline-flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined">call</span> Call (413) 206-1256
+          </a>
+          <a href="contact.html" class="bg-surface-container-lowest text-primary px-10 py-4 rounded-lg font-headline font-extrabold text-lg hover:bg-surface-container transition-all active:scale-95 duration-200">
+            Request Service
+          </a>
+        </div>
+        <p class="text-on-primary-container text-sm mt-6">Calls and texts welcome at both lines. Alternate: <a class="font-bold text-secondary-fixed-dim" href="tel:4136867486">(413) 686-7486</a></p>
       </div>
     </div>
   </section>
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#e9eef9] text-[#002046]">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16 max-w-7xl mx-auto font-body leading-relaxed">
-    <div>
-      <div class="text-lg font-bold text-[#002046] mb-4">Viscarello Plumbing</div>
-      <p class="text-[#44474e] max-w-xs">Master Licensed Plumbers serving Lynn and the Greater Boston area.</p>
-      <div class="mt-6">
-        <a class="text-lg font-bold text-[#b6171e] hover:opacity-80 transition-opacity flex items-center gap-2" href="tel:9783324857">
-          <span class="material-symbols-outlined">call</span>
-          (978) 332-4857
+<footer class="bg-surface-container py-16 px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+          <span class="material-symbols-outlined" style="font-size:22px;">plumbing</span>
+        </span>
+        <span class="text-lg font-headline font-bold text-primary">G, D &amp; Sons Plumbing &amp; Drain Services</span>
+      </div>
+      <p class="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-md">Your neighborhood plumber in Chicopee, MA. Family-owned, licensed and insured, with 11+ years of hands-on experience and a 90-day guarantee on every job.</p>
+      <div class="space-y-1">
+        <a href="tel:4132061256" class="text-secondary font-bold text-lg block hover:text-primary transition-colors">(413) 206-1256</a>
+        <a href="tel:4136867486" class="text-on-surface-variant text-sm block hover:text-secondary transition-colors">Alt / Text: (413) 686-7486</a>
+        <p class="text-on-surface-variant text-sm">Chicopee, MA · Serving Western Massachusetts</p>
+      </div>
+      <div class="flex gap-3 mt-4">
+        <a href="https://www.facebook.com/people/Glen-White/100070307004239/" target="_blank" rel="noopener" class="text-primary hover:text-secondary transition-colors" aria-label="Facebook">
+          <span class="material-symbols-outlined">public</span>
         </a>
       </div>
     </div>
-    <div class="grid grid-cols-2 gap-8 md:col-span-2">
-      <div class="space-y-3">
-        <p class="font-bold mb-4 uppercase tracking-wider text-xs">Quick Links</p>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="index.html">Home</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="index.html#services">Services</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="about.html">About</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="contact.html">Contact</a>
-      </div>
-      <div class="space-y-3">
-        <p class="font-bold mb-4 uppercase tracking-wider text-xs">Services</p>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/heating.html">Heating</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/pipe-repair.html">Pipe Repair</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/gas.html">Gas Fitting</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/fixtures.html">Fixtures</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/pumps.html">Pumps</a>
-        <a class="block text-[#44474e] hover:text-[#b6171e] transition-colors" href="services/inspection.html">Inspection</a>
-      </div>
+    <div class="space-y-3">
+      <h4 class="font-bold text-primary mb-2">Quick Links</h4>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="index.html">Home</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="about.html">About Glen</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="contact.html">Contact</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="#services">All Services</a>
+    </div>
+    <div class="space-y-3">
+      <h4 class="font-bold text-primary mb-2">Services</h4>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/water-heaters.html">Water Heaters</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/drains.html">Drains &amp; Sewers</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/pipe-repair.html">Pipe Repair</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/fixtures.html">Fixtures</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/gas.html">Gas Services</a>
+      <a class="block text-sm text-on-surface-variant hover:text-secondary transition-colors" href="services/commercial.html">Commercial</a>
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-8 py-6 border-t border-primary/10 flex flex-col md:flex-row justify-between items-center gap-4">
-    <div class="flex gap-4">
-      <div class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold text-primary rounded-sm border border-primary/10">LICENSED &amp; INSURED</div>
-      <div class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold text-primary rounded-sm border border-primary/10">MASTER PLUMBER</div>
-    </div>
-    <p class="text-sm opacity-80">© 2024 Viscarello Plumbing Heating &amp; Gas Fitting.</p>
+  <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/20 text-xs text-on-surface-variant flex flex-col md:flex-row gap-2 justify-between">
+    <p>© 2025 G, D &amp; Sons Plumbing and Drain Services. All rights reserved.</p>
+    <p>Licensed &amp; Insured · Massachusetts Journeyman Plumber · 90-Day Guarantee</p>
   </div>
 </footer>
 

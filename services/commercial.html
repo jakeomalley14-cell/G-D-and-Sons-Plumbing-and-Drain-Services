@@ -14,14 +14,14 @@
     theme: {
       extend: {
         colors: {
-          "secondary-fixed-dim": "#ffb3ac", "on-secondary": "#ffffff", "surface": "#f8f9ff",
-          "on-surface": "#161c24", "surface-container-low": "#eef4ff", "outline": "#74777f",
-          "on-primary-container": "#87a0cd", "secondary": "#b6171e", "background": "#f8f9ff",
-          "on-primary": "#ffffff", "surface-container": "#e9eef9", "surface-container-lowest": "#ffffff",
-          "surface-container-highest": "#dde3ee", "on-primary-fixed": "#001b3d",
-          "primary-fixed": "#d6e3ff", "primary-fixed-dim": "#aec7f7", "primary-container": "#1b365d",
-          "outline-variant": "#c4c6cf", "surface-container-high": "#e3e8f4", "primary": "#002046",
-          "secondary-container": "#da3433", "on-surface-variant": "#44474e", "surface-variant": "#dde3ee"
+          "secondary-fixed-dim": "#d4d4d4", "on-secondary": "#ffffff", "surface": "#ffffff",
+          "on-surface": "#000000", "surface-container-low": "#fafafa", "outline": "#a3a3a3",
+          "on-primary-container": "#a3a3a3", "secondary": "#000000", "background": "#ffffff",
+          "on-primary": "#ffffff", "surface-container": "#f5f5f5", "surface-container-lowest": "#ffffff",
+          "surface-container-highest": "#e0e0e0", "on-primary-fixed": "#000000",
+          "primary-fixed": "#f5f5f5", "primary-fixed-dim": "#d4d4d4", "primary-container": "#171717",
+          "outline-variant": "#d4d4d4", "surface-container-high": "#ebebeb", "primary": "#000000",
+          "secondary-container": "#262626", "on-surface-variant": "#525252", "surface-variant": "#e0e0e0"
         },
         borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         fontFamily: { "headline": ["Manrope"], "body": ["Inter"], "label": ["Inter"] }
@@ -38,51 +38,51 @@
 <body class="bg-surface text-on-surface font-body">
 
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f8f9ff]/80 backdrop-blur-md shadow-sm">
+<nav class="fixed top-0 w-full z-50 bg-black shadow-sm">
   <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
     <a href="../index.html" class="flex items-center" aria-label="G, D & Sons Plumbing home">
       <img src="../images/logo.png" alt="G, D & Sons Plumbing & Drain Services" class="h-14 w-auto"/>
     </a>
     <div class="hidden md:flex items-center space-x-8">
-      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../index.html">Home</a>
+      <a class="text-neutral-300 hover:text-white transition-colors font-bold" href="../index.html">Home</a>
       <div class="relative group">
-        <button class="flex items-center gap-0.5 text-[#b6171e] font-bold border-b-2 border-[#b6171e] pb-1">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
+        <button class="flex items-center gap-0.5 text-white font-bold border-b-2 border-white pb-1">Services <span class="material-symbols-outlined transition-transform group-hover:rotate-180" style="font-size:18px;line-height:1;vertical-align:middle">expand_more</span></button>
         <div class="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-150 z-50 min-w-[240px]">
-          <div class="bg-white rounded-lg shadow-2xl border border-gray-100 py-1.5 overflow-hidden">
-            <a href="water-heaters.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Water Heaters</a>
-            <a href="drains.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Drains &amp; Sewers</a>
-            <a href="pipe-repair.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Pipe Repair</a>
-            <a href="fixtures.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Fixtures &amp; Installation</a>
-            <a href="gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-[#44474e] hover:bg-[#eef4ff] hover:text-[#b6171e] transition-colors">Gas Services</a>
-            <a href="commercial.html" class="block px-4 py-2.5 text-sm font-label font-bold text-[#b6171e] bg-[#eef4ff]">Commercial</a>
+          <div class="bg-neutral-900 rounded-lg shadow-2xl border border-neutral-800 py-1.5 overflow-hidden">
+            <a href="water-heaters.html" class="block px-4 py-2.5 text-sm font-label font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors">Water Heaters</a>
+            <a href="drains.html" class="block px-4 py-2.5 text-sm font-label font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors">Drains &amp; Sewers</a>
+            <a href="pipe-repair.html" class="block px-4 py-2.5 text-sm font-label font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors">Pipe Repair</a>
+            <a href="fixtures.html" class="block px-4 py-2.5 text-sm font-label font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors">Fixtures &amp; Installation</a>
+            <a href="gas.html" class="block px-4 py-2.5 text-sm font-label font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors">Gas Services</a>
+            <a href="commercial.html" class="block px-4 py-2.5 text-sm font-label font-bold text-white bg-neutral-800">Commercial</a>
           </div>
         </div>
       </div>
-      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../about.html">About</a>
-      <a class="text-[#44474e] hover:text-[#002046] transition-colors font-bold" href="../contact.html">Contact</a>
+      <a class="text-neutral-300 hover:text-white transition-colors font-bold" href="../about.html">About</a>
+      <a class="text-neutral-300 hover:text-white transition-colors font-bold" href="../contact.html">Contact</a>
     </div>
     <div class="flex items-center gap-6">
-      <a href="tel:4132061256" class="hidden lg:block text-[#002046] font-bold font-headline hover:text-secondary transition-colors">(413) 206-1256</a>
-      <a href="../contact.html" class="bg-secondary text-on-secondary px-5 py-2 rounded-lg font-bold hover:opacity-90 transition-all active:scale-95">Call Today</a>
-      <button id="menu-toggle" class="md:hidden p-2 text-primary"><span class="material-symbols-outlined">menu</span></button>
+      <a href="tel:4132061256" class="hidden lg:block text-white font-bold font-headline hover:text-neutral-300 transition-colors">(413) 206-1256</a>
+      <a href="../contact.html" class="bg-white text-black px-5 py-2 rounded-lg font-bold hover:opacity-90 transition-all active:scale-95">Call Today</a>
+      <button id="menu-toggle" class="md:hidden p-2 text-white"><span class="material-symbols-outlined">menu</span></button>
     </div>
   </div>
-  <div id="mobile-menu" class="md:hidden bg-[#f8f9ff] border-t border-outline-variant/20 px-8 py-4 space-y-3">
-    <a class="block font-headline font-bold text-[#44474e]" href="../index.html">Home</a>
+  <div id="mobile-menu" class="md:hidden bg-black border-t border-neutral-800 px-8 py-4 space-y-3">
+    <a class="block font-headline font-bold text-neutral-300" href="../index.html">Home</a>
     <div>
-      <p class="block font-headline font-bold text-[#b6171e] mb-1">Services</p>
-      <div class="pl-4 space-y-2 pt-1 border-l-2 border-[#b6171e]/40">
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="water-heaters.html">Water Heaters</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="drains.html">Drains &amp; Sewers</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="pipe-repair.html">Pipe Repair</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="fixtures.html">Fixtures &amp; Installation</a>
-        <a class="block text-sm font-label text-[#44474e] hover:text-[#b6171e]" href="gas.html">Gas Services</a>
-        <a class="block text-sm font-label text-[#b6171e] font-bold" href="commercial.html">Commercial</a>
+      <p class="block font-headline font-bold text-white mb-1">Services</p>
+      <div class="pl-4 space-y-2 pt-1 border-l-2 border-white/40">
+        <a class="block text-sm font-label text-neutral-400 hover:text-white" href="water-heaters.html">Water Heaters</a>
+        <a class="block text-sm font-label text-neutral-400 hover:text-white" href="drains.html">Drains &amp; Sewers</a>
+        <a class="block text-sm font-label text-neutral-400 hover:text-white" href="pipe-repair.html">Pipe Repair</a>
+        <a class="block text-sm font-label text-neutral-400 hover:text-white" href="fixtures.html">Fixtures &amp; Installation</a>
+        <a class="block text-sm font-label text-neutral-400 hover:text-white" href="gas.html">Gas Services</a>
+        <a class="block text-sm font-label text-white font-bold" href="commercial.html">Commercial</a>
       </div>
     </div>
-    <a class="block font-headline font-bold text-[#44474e]" href="../about.html">About</a>
-    <a class="block font-headline font-bold text-[#44474e]" href="../contact.html">Contact</a>
-    <a class="block font-headline font-bold text-primary" href="tel:4132061256">(413) 206-1256</a>
+    <a class="block font-headline font-bold text-neutral-300" href="../about.html">About</a>
+    <a class="block font-headline font-bold text-neutral-300" href="../contact.html">Contact</a>
+    <a class="block font-headline font-bold text-white" href="tel:4132061256">(413) 206-1256</a>
   </div>
 </nav>
 
@@ -234,39 +234,39 @@
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#e9eef9] text-[#002046] font-body">
+<footer class="bg-black text-white font-body">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
     <div class="md:col-span-2">
       <div class="mb-4">
         <img src="../images/logo.png" alt="G, D & Sons Plumbing & Drain Services" class="h-20 w-auto"/>
       </div>
-      <p class="text-[#44474e] text-sm leading-relaxed mb-4 max-w-md">Your neighborhood plumber in Chicopee, MA. Family-owned, licensed and insured, with 11+ years of hands-on experience and a 90-day guarantee on every job.</p>
-      <a class="text-secondary font-bold text-lg flex items-center gap-2 hover:opacity-80 transition-opacity" href="tel:4132061256">
+      <p class="text-neutral-400 text-sm leading-relaxed mb-4 max-w-md">Your neighborhood plumber in Chicopee, MA. Family-owned, licensed and insured, with 11+ years of hands-on experience and a 90-day guarantee on every job.</p>
+      <a class="text-white font-bold text-lg flex items-center gap-2 hover:opacity-80 transition-opacity" href="tel:4132061256">
         <span class="material-symbols-outlined">call</span> (413) 206-1256
       </a>
-      <a class="text-[#44474e] text-sm hover:text-secondary transition-colors" href="tel:4136867486">Alt / Text: (413) 686-7486</a>
+      <a class="text-neutral-400 text-sm hover:text-white transition-colors" href="tel:4136867486">Alt / Text: (413) 686-7486</a>
     </div>
     <div>
-      <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#44474e]">Quick Links</h4>
-      <ul class="space-y-2 text-sm text-[#44474e]">
-        <li><a class="hover:text-[#b6171e] transition-colors" href="../index.html">Home</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="../about.html">About Glen</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="../contact.html">Contact</a></li>
+      <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-white">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-neutral-400">
+        <li><a class="hover:text-white transition-colors" href="../index.html">Home</a></li>
+        <li><a class="hover:text-white transition-colors" href="../about.html">About Glen</a></li>
+        <li><a class="hover:text-white transition-colors" href="../contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
-      <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-[#44474e]">Services</h4>
-      <ul class="space-y-2 text-sm text-[#44474e]">
-        <li><a class="hover:text-[#b6171e] transition-colors" href="water-heaters.html">Water Heaters</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="drains.html">Drains &amp; Sewers</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="pipe-repair.html">Pipe Repair</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="fixtures.html">Fixtures</a></li>
-        <li><a class="hover:text-[#b6171e] transition-colors" href="gas.html">Gas Services</a></li>
-        <li><a class="text-[#b6171e] font-bold" href="commercial.html">Commercial</a></li>
+      <h4 class="font-bold mb-4 uppercase text-xs tracking-widest text-white">Services</h4>
+      <ul class="space-y-2 text-sm text-neutral-400">
+        <li><a class="hover:text-white transition-colors" href="water-heaters.html">Water Heaters</a></li>
+        <li><a class="hover:text-white transition-colors" href="drains.html">Drains &amp; Sewers</a></li>
+        <li><a class="hover:text-white transition-colors" href="pipe-repair.html">Pipe Repair</a></li>
+        <li><a class="hover:text-white transition-colors" href="fixtures.html">Fixtures</a></li>
+        <li><a class="hover:text-white transition-colors" href="gas.html">Gas Services</a></li>
+        <li><a class="text-white font-bold" href="commercial.html">Commercial</a></li>
       </ul>
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-8 pb-8 text-xs text-[#44474e] opacity-80">© 2025 G, D &amp; Sons Plumbing and Drain Services. Licensed &amp; Insured · 90-Day Guarantee</div>
+  <div class="max-w-7xl mx-auto px-8 pb-8 text-xs text-neutral-500 opacity-80">© 2025 G, D &amp; Sons Plumbing and Drain Services. Licensed &amp; Insured · 90-Day Guarantee</div>
 </footer>
 
 <script>
